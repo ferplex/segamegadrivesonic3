@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sega Mega Drive - Sonic 3</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: #0b0e14;
+            color: #eceff4;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            color: #0088ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(0,136,255,0.4);
+        }
+        .canvas-container {
+            width: 640px;
+            height: 480px;
+            max-width: 95vw;
+            max-height: 70vh;
+            background: #000;
+            border: 4px solid #0088ff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sonic The Hedgehog 3</h1>
+
+    <div class="canvas-container">
+        <div id="game"></div>
+    </div>
+
+    <script>
+        EJS_player = '#game';
+        EJS_core = 'segaMD'; // Carga el núcleo de Sega Mega Drive
+        
+        // Vinculamos exactamente tu archivo de Sonic 3
+        EJS_gameUrl = 'segamegadrivesonic3.zip'; 
+        
+        EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
+    </script>
+    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+
+</body>
+</html>
